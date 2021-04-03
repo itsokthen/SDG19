@@ -8,4 +8,4 @@ client = commands.Bot(command_prefix = '.')
 async def on_ready():
     print('Bot is ready.')
 
-client.run(bot_api_key)
+client.run(config.bot_api_key)
