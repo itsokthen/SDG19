@@ -27,17 +27,23 @@ jobs:
       - name: Run the GitHub Actions Status Embed Action
         uses: Senior-Design-Team-19-Github-Bots/Discord-Github-Action@main
         with:
-            webhook_id: '819318289729323010'  # Has to be provided as a string
-            webhook_token: ${{ secrets.webhook_token }}
-            status: 'success'
-            pr_author_login: ${{ github.event.pull_request.user.login }}
-            pr_number: ${{ github.event.pull_request.number }}
-            pr_title: ${{ github.event.pull_request.title }}
-            pr_source: ${{ github.event.pull_request.head.label }}
-            issue_author_login: ${{ github.event.issue.user.login }}
-            issue_number: ${{ github.event.issue.number }}
-            issue_title: ${{ github.event.issue.title }}
-            issue_status: ${{ github.event.issue.state }}
+           # Discord webhook
+          webhook_id: '819318289729323010'
+          webhook_token: '7CZ8r8B5-03m0GKZyIaIyOMfm9-wz3Xyi83x7CH4-wBDnKrhrCsztClcSK54191KFOrT'
+          status: 'success'
 
+          # Optional arguments for PR-related events
+          # Note: There's no harm in including these lines for non-PR
+          # events, as non-existing paths in objects will evaluate to
+          # `null` silently and the github status embed action will
+          # treat them as absent.
+          pr_author_login: ${{ github.event.pull_request.user.login }}
+          pr_number: ${{ github.event.pull_request.number }}
+          pr_title: ${{ github.event.pull_request.title }}
+          pr_source: ${{ github.event.pull_request.head.label }}
+          issue_author_login: ${{ github.event.issue.user.login }}
+          issue_number: ${{ github.event.issue.number }}
+          issue_title: ${{ github.event.issue.title }}
+          issue_status: ${{ github.event.issue.state }}
 
 
