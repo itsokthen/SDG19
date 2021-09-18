@@ -24,7 +24,7 @@ jobs:
     steps:
       - name: TODO to Issue
         uses: alstr/todo-to-issue-action@v4.2
-      - name: GitHub Actions Status Embed for Discord
+      - name: Run the GitHub Actions Status Embed Action
         uses: Senior-Design-Team-19-Github-Bots/Discord-Github-Action@main
         with:
             webhook_id: '819318289729323010'  # Has to be provided as a string
