@@ -29,7 +29,7 @@ jobs:
         with:
            # Discord webhook
           webhook_id: '819318289729323010'
-          webhook_token: '7CZ8r8B5-03m0GKZyIaIyOMfm9-wz3Xyi83x7CH4-wBDnKrhrCsztClcSK54191KFOrT'
+          webhook_token: 'x'
           status: 'success'
 
           # Optional arguments for PR-related events
