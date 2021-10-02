@@ -28,8 +28,8 @@ jobs:
         uses: Senior-Design-Team-19-Github-Bots/Discord-Github-Action@main
         with:
            # Discord webhook
-          webhook_id: '819318289729323010'
-          webhook_token: 'x'
+          webhook_id: '893654455269068830'
+          webhook_token: 'W-oRBGa_cpZfjHnA6uJsOC8FNfXj0ihp2bENEJAg3M9t7A7ti_UVIne-UH3avaSxQwYc'
           status: 'success'
 
           # Optional arguments for PR-related events
