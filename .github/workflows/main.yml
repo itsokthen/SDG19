@@ -14,7 +14,7 @@ jobs:
         id: "todo"
   discord_job:
     needs: [todo_job]
-    name: Assemble and Upload to Firebase
+    name: Discord Issue
     runs-on: ubuntu-latest
     steps:
     - name: Run the GitHub Actions Status Embed Action
