@@ -13,7 +13,7 @@ jobs:
         uses: "alstr/todo-to-issue-action@v4.2"
         id: "todo"
       - name: Run the GitHub Actions Status Embed Action
-        uses: 893091483/Discord-embed@main
+        uses: Senior-Design-Team-19-Github-Bots/Discord-Github-Action@main
         with:
            # Discord webhook
           webhook_id: '893654455269068830'
