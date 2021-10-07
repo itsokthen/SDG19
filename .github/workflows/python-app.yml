@@ -25,7 +25,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Run the GitHub Actions Status Embed Action
-        uses: 893091483/Discord-embed@main
+        uses: Senior-Design-Team-19-Github-Bots/Discord-Github-Action@main
         with:
            # Discord webhook
           webhook_id: '893654455269068830'
