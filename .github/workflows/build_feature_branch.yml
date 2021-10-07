@@ -2,7 +2,7 @@ name: Build Feature Branch
 
 on:
   push:
-    branches: 'feature/**'
+    branches: [master, main]
 
 jobs:
   test_job:
