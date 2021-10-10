@@ -12,29 +12,3 @@ jobs:
       - name: "TODO to Issue"
         uses: "alstr/todo-to-issue-action@v4.2"
         id: "todo"
-  discord_job:
-    needs: [todo_job]
-    name: Discord Issue
-    runs-on: ubuntu-latest
-    steps:
-    - name: Run the GitHub Actions Status Embed Action
-      uses: Senior-Design-Team-19-Github-Bots/Discord-Github-Action@main
-      with:
-         # Discord webhook
-        webhook_id: '880189465207910551'
-        webhook_token: 'BZ1Y6ppUICvMj0sQwv9AXScc2tdjzAPrg81oXjrFD024yie1_dAlWChHSK0gJ5M0D9G5'
-        status: 'success'
-
-        # Optional arguments for PR-related events
-        # Note: There's no harm in including these lines for non-PR
-        # events, as non-existing paths in objects will evaluate to
-        # `null` silently and the github status embed action will
-        # treat them as absent.
-        pr_author_login: ${{ github.event.pull_request.user.login }}
-        pr_number: ${{ github.event.pull_request.number }}
-        pr_title: ${{ github.event.pull_request.title }}
-        pr_source: ${{ github.event.pull_request.head.label }}
-        issue_author_login: ${{ github.event.issue.user.login }}
-        issue_number: ${{ github.event.issue.number }}
-        issue_title: ${{ github.event.issue.title }}
-        issue_status: ${{ github.event.issue.state }}
