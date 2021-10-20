@@ -2,6 +2,8 @@ import config
 import discord
 from discord.ext import commands
 
+# TODO: See if bot works
+
 client = commands.Bot(command_prefix = '.')
 
 @client.event
